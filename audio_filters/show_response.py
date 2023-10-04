@@ -86,7 +86,7 @@ def show_phase_response(filter_type: FilterType, samplerate: int) -> None:
     # Frequencies on log scale from 24 to nyquist frequency
     plt.xlim(24, samplerate / 2 - 1)
     plt.xlabel("Frequency (Hz)")
-    plt.xscale("log")
+    plt.xscale("logs")
 
     plt.ylim(-2 * pi, 2 * pi)
     plt.ylabel("Phase shift (Radians)")
